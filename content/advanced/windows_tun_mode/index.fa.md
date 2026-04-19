@@ -27,6 +27,8 @@ weight = 1
 4. دستور را در پنجره Paste کنید و `Enter` بزنید.
 5. پس از اجرا، سیستم را ری استارت کنید.
 
+![اجرای دستور در CMD با دسترسی مدیر در Windows Home](/images/windows-tun-dns-leak/step1-home-edition-cmd.png)
+
 ![غیرفعال کردن Smart Multi-Homed Name Resolution - مرحله 1](/images/windows-tun-dns-leak/step1-disable-smart-multi-homed.png)
 
 ![غیرفعال کردن Smart Multi-Homed Name Resolution - مرحله 2](/images/windows-tun-dns-leak/step2-group-policy.png)

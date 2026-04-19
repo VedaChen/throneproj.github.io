@@ -27,6 +27,8 @@ weight = 1
 4. Вставьте команду в окно и нажмите `Enter`.
 5. После выполнения перезагрузите систему.
 
+![Выполнение команды в CMD с правами администратора в Windows Home](/images/windows-tun-dns-leak/step1-home-edition-cmd.png)
+
 ![Отключение Smart Multi-Homed Name Resolution, шаг 1](/images/windows-tun-dns-leak/step1-disable-smart-multi-homed.png)
 
 ![Отключение Smart Multi-Homed Name Resolution, шаг 2](/images/windows-tun-dns-leak/step2-group-policy.png)

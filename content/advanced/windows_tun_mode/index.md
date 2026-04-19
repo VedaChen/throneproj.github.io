@@ -27,6 +27,8 @@ If you cannot find Group Policy Editor (common on Windows Home edition), you can
 4. Paste the command into the window and press `Enter`.
 5. Restart Windows after the command completes.
 
+![Run the command in elevated CMD on Windows Home](/images/windows-tun-dns-leak/step1-home-edition-cmd.png)
+
 ![Disable Smart Multi-Homed Name Resolution step 1](/images/windows-tun-dns-leak/step1-disable-smart-multi-homed.png)
 
 ![Disable Smart Multi-Homed Name Resolution step 2](/images/windows-tun-dns-leak/step2-group-policy.png)
