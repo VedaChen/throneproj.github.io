@@ -16,6 +16,17 @@ weight = 1
 
 پیشنهاد می شود این سیاست را غیرفعال کنید:
 
+اگر Group Policy Editor را پیدا نمی کنید (معمولاً در نسخه Windows Home)، می توانید این تنظیم را با خط فرمانِ دارای دسترسی مدیر اعمال کنید:
+
+1. دستور زیر را کپی کنید:
+
+`reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\DNSClient" /v DisableSmartNameResolution /t REG_DWORD /d 1 /f`
+
+2. منوی Start را باز کنید و `CMD` را جستجو کنید.
+3. روی `Command Prompt` راست کلیک کنید و `Run as administrator` را بزنید.
+4. دستور را در پنجره Paste کنید و `Enter` بزنید.
+5. پس از اجرا، سیستم را ری استارت کنید.
+
 ![غیرفعال کردن Smart Multi-Homed Name Resolution - مرحله 1](/images/windows-tun-dns-leak/step1-disable-smart-multi-homed.png)
 
 ![غیرفعال کردن Smart Multi-Homed Name Resolution - مرحله 2](/images/windows-tun-dns-leak/step2-group-policy.png)

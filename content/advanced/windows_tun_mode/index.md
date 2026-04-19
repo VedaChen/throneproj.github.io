@@ -16,6 +16,17 @@ DNS leaks may occur in environments with virtual network adapters. With multiple
 
 It is recommended to disable this policy:
 
+If you cannot find Group Policy Editor (common on Windows Home edition), you can apply the setting manually with an elevated command prompt:
+
+1. Copy the command below:
+
+`reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\DNSClient" /v DisableSmartNameResolution /t REG_DWORD /d 1 /f`
+
+2. Open the Start menu and search for `CMD`.
+3. Find `Command Prompt`, right-click it, and choose `Run as administrator`.
+4. Paste the command into the window and press `Enter`.
+5. Restart Windows after the command completes.
+
 ![Disable Smart Multi-Homed Name Resolution step 1](/images/windows-tun-dns-leak/step1-disable-smart-multi-homed.png)
 
 ![Disable Smart Multi-Homed Name Resolution step 2](/images/windows-tun-dns-leak/step2-group-policy.png)

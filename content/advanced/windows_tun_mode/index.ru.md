@@ -16,6 +16,17 @@ weight = 1
 
 Рекомендуется отключить эту политику:
 
+Если у вас нет редактора групповых политик (часто в Windows Home), можно применить настройку вручную через командную строку с правами администратора:
+
+1. Скопируйте команду:
+
+`reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\DNSClient" /v DisableSmartNameResolution /t REG_DWORD /d 1 /f`
+
+2. Откройте меню «Пуск» и найдите `CMD`.
+3. Найдите «Командная строка», нажмите правой кнопкой и выберите «Запуск от имени администратора».
+4. Вставьте команду в окно и нажмите `Enter`.
+5. После выполнения перезагрузите систему.
+
 ![Отключение Smart Multi-Homed Name Resolution, шаг 1](/images/windows-tun-dns-leak/step1-disable-smart-multi-homed.png)
 
 ![Отключение Smart Multi-Homed Name Resolution, шаг 2](/images/windows-tun-dns-leak/step2-group-policy.png)
